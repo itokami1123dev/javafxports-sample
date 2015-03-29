@@ -10,7 +10,7 @@ buildscript {
 
 apply plugin: 'org.javafxports.jfxmobile'
 
-mainClassName = 'hello.SimplePort'
+mainClassName = 'hello.MainApplication'
 version = '8u40'
 
 repositories {

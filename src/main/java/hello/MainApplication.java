@@ -10,31 +10,22 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SimplePort extends Application {
+public class MainApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
-//        Label answer = new Label("Hello World!");
-//
-//        StackPane root = new StackPane();
-//        root.getChildren().addAll(answer);
-
-
         VBox root = null;
         try {
             root = FXMLLoader.load(
-                    getClass().getResource("/sample.fxml")
+                    getClass().getResource("/MenuView.fxml")
             );
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-
-//        Scene scene = new Scene(root, 300, 250);
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("JavaFX Porting Hello World");
+        primaryStage.setTitle("SampleApplication");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -42,5 +33,4 @@ public class SimplePort extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }
