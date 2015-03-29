@@ -20,6 +20,7 @@ repositories {
 jfxmobile {
     ios {
         forceLinkClasses = ['hello.**.*']
+        infoPList = file('src/ios/assets/info.plist.xml')
     }
     android {
         applicationPackage = 'org.javafxports.ensemble'
